@@ -23,10 +23,10 @@ class Dashboard extends Component {
     }
 }
 
-const mapStateToProp = (state) => {
+const mapStateToProps = (state) => {
     return {
            projects: state.project.projects
     }
 }
 
-export default connect(mapStateToProp)(Dashboard)
+export default connect(mapStateToProps)(Dashboard)
